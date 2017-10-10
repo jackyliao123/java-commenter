@@ -1,0 +1,40 @@
+prefix_space = 1
+
+modifiers.allowed = abstract final native default private protected public strictfp static synchronized transient volatile
+modifiers.remap<default> =
+modifiers.format = $([$m][, $m][ and $m])m
+
+type = $t
+type.array = %a array of $t
+type.mdarray = %a $n dimensional array of $t
+
+import.static_asterisk = Import all static fields from the $c class
+import.asterisk = Import all classes from the $p package
+import.static_fallback = Import the $f field
+import.static = Import the static field $f from the $c class
+import.normal = Import the $c class
+
+class.new_class = Creates %a $m class named $c
+class.new_class.extend = Creates %a $m class named $c extending $e
+class.new_class.implement = Creates %a $m class named $c implementing $([$i][, $i][, and $i])i
+class.new_class.extend_implement = Creates %a $m class named $c extending $e and implementing $([$i][, $i][, and $i])i
+class.new_interface = Creates %a $m interface named $c
+
+field.new_field.single_nvalue = Declare %a $m field named $f as $t
+field.new_field.single_value = Declare %a $m field named $f as $t, and initialize with the value of $v
+field.new_field.multiple = Declare $n $m fields as $t: $([$n|$n with value $v][, $n|, $n with value $v][, and $n|, and $n with value $v])f
+
+method.new_method.no_param = Declare %a $m method named $n with $r as return type
+method.new_method.param = Declare %a $m method named $n with $([$n as $t][, $n as $t][, and $n as $t])p as parameters, and $r as return type
+method.new_method.no_param_ex = Declare %a $m method named $n with $r as return type and throws $([$x][, $x][, and $x])e
+method.new_method.param_ex = Declare %a $m method named $n with $([$n as $t][, $n as $t][, and $n as $t])p as parameters, $r as return type, and throws $([$x][, $x][, and $x])e
+
+stmt.assert = Ensures $e is true
+stmt.assert_msg = Ensures $e is true, and error with $m if false
+stmt.break = Break out of the innermost block
+stmt.break_label = Break out of the block labeled $l
+
+stmt.label = Label the block as $l
+
+stmt.return = Return to the caller
+stmt.return_v = Return the value $v to the caller
